@@ -4,9 +4,22 @@ import org.junit.Test;
 public class FizzBuzzTest {
 
     @Test
-    public void testTrue() throws Exception {
-        Assert.assertEquals(true, true);
+    public void testTen() throws Exception {
+        Assert.assertEquals("Buzz", FizzBuzz.fizzbuzz(10));
     }
 
-    // TODO
+    @Test
+    public void testSix() throws Exception {
+        Assert.assertEquals("Fizz", FizzBuzz.fizzbuzz(6));
+    }
+
+    @Test
+    public void testFifteen() throws Exception {
+        Assert.assertEquals("FizzBuzz", FizzBuzz.fizzbuzz(15));
+    }
+
+    @Test
+    public void testEight() throws Exception {
+        Assert.assertEquals("8", FizzBuzz.fizzbuzz(8));
+    }
 }
